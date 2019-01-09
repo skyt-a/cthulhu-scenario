@@ -1,0 +1,35 @@
+<section class="scenario-area">
+  <!--- This may need to change --->
+  <div class="main-container">
+    <section class="navigation-word">シナリオを選んでください</section> 
+    <div class="coverflow-container">
+      <ol class="coverflow-list">
+        <!-- Cover item -->
+        <input type="radio" name="cover-item" id="cover-1" [(ngModel)]="selectedScenario" value="1">
+        <li class="coverflow-item">
+          <label for="cover-1">
+            <figure class="album-cover">
+              <img src="assets/images/pre.png">
+              <figcaption class="album-name">はじめにお読みください</figcaption>
+            </figure>
+          </label>
+        </li>
+        <!-- Cover item -->
+        <input type="radio" name="cover-item" id="cover-2" [(ngModel)]="selectedScenario" value="2">
+        <li class="coverflow-item">
+          <label for="cover-2">
+            <figure class="album-cover">
+              <img src="assets/images/god_island.PNG">
+              <figcaption class="album-name">神の島</figcaption>
+            </figure>
+          </label>
+        </li>
+      </ol>
+    </div>
+    <section class="select-scenario">
+      <section>タイトル: {{scenarioSummaries[selectedScenario].name}}</section>
+      <section>{{scenarioSummaries[selectedScenario].summary}}</section>
+      <button class="btn btn-danger btn-select" (click)="goToScenario()">選択</button>
+    </section>
+  </div>
+</section>

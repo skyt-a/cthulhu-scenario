@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    overflow: hidden;
+}
+
+section.content-area {
+    height: calc(100vh - 40px);
+    overflow: auto;
+    background-color: black;
+    article.content {
+        margin: auto;
+        margin-top: 20px;
+        background-color: #FFFFFF;
+        width: 80%;
+        margin-bottom: 200px;
+        legend {
+            margin-top: 10px;
+            border-bottom: 1px solid red;
+            width: 80%;
+        }
+        legend.sub-legend {
+            font-size: 1.3em;
+            border-bottom: 1px solid blue;
+            width: 80%;
+        }
+        section.content-inner {
+            margin: 10px;
+            section.point-explain {
+                margin: 10px;
+                padding: 5px;
+                border: 1px solid black;
+            }
+        }
+        legend.point-legend {
+            font-size: 1.1em;
+            border-bottom: 1px solid green;
+            width: 80%;
+        }
+    }
+}

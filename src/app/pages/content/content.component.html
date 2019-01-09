@@ -1,0 +1,13 @@
+<article>
+  <nav class="nav">
+    <a class="nav-link content-link" (click)="setContents('pro')">はじめに</a>
+    <a class="nav-link content-link" (click)="setContents('truth')">シナリオ概略＆真相</a>
+    <a class="nav-link content-link" (click)="setContents('character')">キャラクター</a>
+    <a class="nav-link content-link" (click)="setContents('story')">ストーリー</a>
+    <a class="nav-link content-link" (click)="return()">戻る</a>
+  </nav>
+  <app-pro *ngIf="selectedContents === 'pro'"></app-pro>
+  <app-truth *ngIf="selectedContents === 'truth'"></app-truth>
+  <app-character *ngIf="selectedContents === 'character'"></app-character>
+  <app-story *ngIf="selectedContents === 'story'"></app-story>
+</article>

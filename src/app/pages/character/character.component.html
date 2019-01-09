@@ -1,0 +1,62 @@
+<section class="content-area">
+  <article class="character-content">
+    <section class="character-explain" *ngFor="let c of characters">
+      <legend [class]="getSexLegend(c)">{{c.name}}</legend>
+      <legend class="character-point-legend">能力値</legend>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>STR</td>
+            <td>{{c.STR}}</td>
+          </tr>
+          <tr>
+            <td>CON</td>
+            <td>{{c.CON}}</td>
+          </tr>
+          <tr>
+            <td>POW</td>
+            <td>{{c.POW}}</td>
+          </tr>
+          <tr>
+            <td>DEX<td>{{c.DEX}}</td>
+          </tr>
+          <tr>
+            <td>APP</td>
+            <td>{{c.APP}}</td>
+          </tr>
+          <tr>
+            <td>SIZ</td>
+            <td>{{c.SIZ}}</td>
+          </tr>
+          <tr>
+            <td>INT</td>
+            <td>{{c.INT}}</td>
+          </tr>
+          <tr>
+            <td>EDU</td>
+            <td>{{c.EDU}}</td>
+          </tr>
+          <tr>
+            <td>HP</td>
+            <td>{{getHP(c)}}</td>
+          </tr>
+          <tr>
+            <td>MP</td>
+            <td>{{c.POW}}</td>
+          </tr>
+          <tr *ngIf="!c.berserk">
+            <td>SAN</td>
+            <td>{{c.POW * 5}}</td>
+          </tr>
+      </table>
+      <legend class="character-point-legend">技能</legend>
+      <section>
+        {{c.skills}}
+      </section>
+      <legend class="character-point-legend">概要</legend>
+      <section>
+        {{c.summary}}
+      </section>
+    </section>
+  </article>
+</section>
