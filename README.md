@@ -1,3 +1,9 @@
+# 概要
+https://cthulhuscenario.firebaseapp.com/
+ユーザーID: nobrother
+パスワード: nbnbnobrother
+
+
 # CthulhuScenario
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
